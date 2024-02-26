@@ -10,4 +10,7 @@ while(True):
         print("Congratulations! You guessed the right number.")
         break
     else:
-        print("That's not it. Try again.")
+        if int(guess) > number:
+            print("Lower!")
+        else:
+            print("Higher!")
