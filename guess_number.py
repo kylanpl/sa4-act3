@@ -12,4 +12,7 @@ while(guesses > 0):
         print("Congratulations! You guessed the right number.")
         break
     else:
-        print(f"That's not it. {guesses} guesses left.")
+        if int(guess) > number:
+            print(f"Lower! {guesses} guesses left.")
+        else:
+            print(f"Higher! {guesses} guesses left.")
